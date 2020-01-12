@@ -1,0 +1,14 @@
+
+<div class="container p-5">
+        <h4 class="text-center"><u>Repo Lists</u></h4>
+    <div class="row" >
+        <div class="col-sm-3 pt-2" *ngFor="let repo of repos">
+          <div class="card">
+            <div class="card-body">
+                <p class="card-text">{{repo.name}} </p>
+            <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View project on github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
